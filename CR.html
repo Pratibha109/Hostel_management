@@ -7,12 +7,26 @@
     <link rel="stylesheet" href="CR.css">
 </head>
 <body>
+    <div class="nav">
+        <nav class="top-nav">
+            <h3>Hostel Management System</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Login.html" >User login</a></li>   
+                <li><a href="Admin.html" >Admin login</a></li>                          
+                <li><a href="Application.html">Application</a></li>
+                <li><a href="about.html">about</a></li> 
+                <li><a href="CR.html">Complaint/Request</a></li> 
+                <li><a href="logout.html">logout</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="wrapper">
         <form action="">
             <div class="box">
                 <h2>Complaints or Requestd</h2>
-                <input type="text" size="400" placeholder="enter your complaint or Request">
-                <button type="submit" class="btn">send message</button>
+                <input type="text" size="400" placeholder="enter your complaint or Request" required>
+                <button type="submit" onclick="handleForm()" class="btn">send message</button>
             </div>
            
         </form>
