@@ -16,14 +16,14 @@ body{
 }
 
 .top-nav{
-    background-color: cadetblue;
-    padding: 30px 20px;
+    background-color: cadetblue ;
+    padding: 10px 5px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
     /*border:2px solid rgb(255, 255, 255);*/
 }
 
@@ -39,12 +39,19 @@ body{
     font-size: 46px;
     border:2px solid rgb(255, 255, 255);
 }*/
+.top-nav h3{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+}
 .top-nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 .top-nav li{
     display: flex;
@@ -53,16 +60,16 @@ body{
 }
 .top-nav a{
     display: block;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
 }
 .top-nav a:hover{
-    background-color: black;
+    background-color: dodgerblue;
     color: white;
 }
 .top-nav a:active{
-    background-color: greenyellow;
+    background-color:  aquamarine ;
     color: black;
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Page</title>
+  <link rel="stylesheet" type="text/css" href="Application.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Student Application</h1>
+      <div class="personal">
+        <h2> Personal Details</h2>
+
+        <div class="input-box">
+          Username:-
+          <input type="text" placeholder="" required>
+        </div>
+        <div class="input-box">
+          Set Password:-
+          <input type="password" name="" id="">
+        </div>
+        <div class="input-box">
+          Full Name:-
+          <input type="text" placeholder=" " required>
+        </div>
+        <div class="input-box">
+          Enter your birth date:-
+          <input type="date" placeholder="" required>
+        </div>
+        <div class="input-box">
+          Enter your age:-
+          <input type="number" placeholder="" required>
+        </div>
+        <div class="input-box">
+          Contact Number:-
+          <input type="number" placeholder=" " min="10" max="10" required>
+        </div>
+        <div class="input-box">
+          Enter your email id:-
+          <input type="email" placeholder=" " required>
+        </div>
+        <div class="input-box">
+          Aadhar Number:-
+          <input type="number" placeholder=" " min="12" max="12" required>
+        </div>
+        <div class="input-box">
+          Enter your address:-
+          <input type="text" placeholder=" " required>
+        </div>
+        <p> Gender
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="not_say" name="gender" value="not_say">
+          <label for="not_say">Prefer not to say</label>
+        </div>
+        </p>
+      </div>
+
+      <div class="parents">
+        <h2>Parents/Guardians Details </h2>
+        <div class="input-box">
+          Enter parents name:-
+          <input type="text" placeholder=" " required>
+        </div>
+        <div class="input-box">
+          Enter parents Contact number:-
+          <input type="number" placeholder="" min="10" max="10" required>
+        </div>
+        <div class="input-box">
+          Enter your parents email id:-
+          <input type="email" placeholder=" " required>
+        </div>
+
+      </div>
+      <div class="acadmic">
+        <h2>Acadmic details</h2>
+        <div class="input-box">
+          Enter College/School Name:-
+          <input type="text" placeholder="" required>
+        </div>
+        <div class="input-box">
+          Enter year of passing :-
+          <input type="date" placeholder="" required>
+        </div>
+        <div class="health">
+          Any Health issue
+          <div class="radio-group">
+            <input type="radio" id="yes" name="health" value="yes">
+            <label for="yes">yes</label>
+            <input type="radio" id="no" name="health" value="no">
+            <label for="no">no</label>
+            <div class="input-box"> if yes then what is it
+              <input type="text" placeholder=" ">
+            </div>
+
+          </div>
+        </div>
+        <div class="submit">
+          <button type="submit" onclick="handleForm()" class="btn">Apply</button>
+          <button type="reset" onclick="close" class="btn"> Cancel</button>
+        </div>
+    </form>
+  </div>
+</body>
+</html>

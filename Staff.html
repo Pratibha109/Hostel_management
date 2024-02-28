@@ -4,27 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Page</title>
-  <link rel="stylesheet" type="text/css" href="registration.css">
+  <title>Employ Application</title>
+  <link rel="stylesheet" type="text/css" href="Staff.css">
 </head>
 
 <body>
   <div class="wrapper">
     <form action="">
-      <h1>Register Here</h1>
+      <h1>Employ Application</h1>
       <div class="personal">
-        <h2> Personal Details</h2>
-        <div class="input-box">
-          Full Name:-
-          <input type="text" placeholder=" " required>
-        </div>
         <div class="input-box">
           Username:-
           <input type="text" placeholder="" required>
         </div>
         <div class="input-box">
-          Set Password
+          Set Password:-
           <input type="password" name="" id="">
+        </div>
+        <div class="input-box">
+          Full Name:-
+          <input type="text" placeholder=" " required>
         </div>
         <div class="input-box">
           Enter your birth date:-
@@ -62,39 +61,23 @@
         </p>
       </div>
 
-      <div class="parents">
-        <h2>Parents/Guardians Details </h2>
-        <div class="input-box">
-          Enter parents name:-
-          <input type="text" placeholder=" " required>
-        </div>
-        <div class="input-box">
-          Enter parents Contact number:-
-          <input type="number" placeholder="" min="10" max="10" required>
-        </div>
-        <div class="input-box">
-          Enter your parents email id:-
-          <input type="email" placeholder=" " required>
-        </div>
-
-      </div>
-      <div class="acadmic">
-        <h2>Acadmic details</h2>
+      <div class="Qualification">
+        <h2>Qualification</h2>
         <div class="input-box">
           Enter College/School Name:-
           <input type="text" placeholder="" required>
         </div>
         <div class="input-box">
-          Enter year of passing :-
-          <input type="date" placeholder="" required>
+          Enter your Degree:-
+          <input type="text" placeholder="" required>
         </div>
         <div class="health">
           Any Health issue
           <div class="radio-group">
             <input type="radio" id="yes" name="health" value="yes">
-            <label for="male">yes</label>
+            <label for="yes">yes</label>
             <input type="radio" id="no" name="health" value="no">
-            <label for="female">no</label>
+            <label for="no">no</label>
             <div class="input-box"> if yes then what is it
               <input type="text" placeholder=" ">
             </div>
@@ -102,8 +85,8 @@
           </div>
         </div>
         <div class="submit">
-          <button type="submit" class="btn">Register</button>
-          <button type="submit" class="btn">cancel</button>
+          <button type="submit" onclick="handleForm()" class="btn">Apply</button>
+          <button type="reset" onclick="close" class="btn"> Cancel</button>
         </div>
     </form>
   </div>
